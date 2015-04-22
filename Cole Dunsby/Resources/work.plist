@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>company</key>
+		<string>Nuance Communications</string>
+		<key>position</key>
+		<string>Mobile Software Developer Intern</string>
+		<key>image</key>
+		<string>nuance</string>
+		<key>website</key>
+		<string>http://www.nuance.com</string>
+	</dict>
+	<dict>
+		<key>company</key>
+		<string>Ready2Play</string>
+		<key>position</key>
+		<string>Lead Software Developer</string>
+		<key>image</key>
+		<string>r2p</string>
+		<key>website</key>
+		<string>http://www.ready2play.co</string>
+	</dict>
+	<dict>
+		<key>company</key>
+		<string>Kwirk</string>
+		<key>position</key>
+		<string>Software Developer</string>
+		<key>image</key>
+		<string>kwirk</string>
+		<key>website</key>
+		<string>http://kwirk.co</string>
+	</dict>
+	<dict>
+		<key>company</key>
+		<string>Direction 2</string>
+		<key>position</key>
+		<string>Website Developer</string>
+		<key>image</key>
+		<string>d2</string>
+		<key>website</key>
+		<string>http://www.direction2.com</string>
+	</dict>
+	<dict>
+		<key>company</key>
+		<string>Dunsby Property Inspections</string>
+		<key>position</key>
+		<string>Website Developer</string>
+		<key>image</key>
+		<string>dpi</string>
+		<key>website</key>
+		<string>http://www.dunsbypropertyinspections.com</string>
+	</dict>
+</array>
+</plist>

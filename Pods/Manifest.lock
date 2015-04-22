@@ -1,0 +1,19 @@
+PODS:
+  - ChameleonFramework (1.1.2)
+  - CWPopup (1.2.6)
+  - MBProgressHUD (0.9.1)
+  - TTTAttributedLabel (1.10.1)
+
+DEPENDENCIES:
+  - ChameleonFramework (~> 1.1)
+  - CWPopup (~> 1.2.4)
+  - MBProgressHUD (~> 0.9)
+  - TTTAttributedLabel (= 1.10.1)
+
+SPEC CHECKSUMS:
+  ChameleonFramework: 1b4588efcae564886e1a176fa02fb0f4c81a69b3
+  CWPopup: 3f8b0704a9914813d90372d66525d31f24b27d49
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  TTTAttributedLabel: c8f3801a6463b9c9b82b0c84c465fdda9751892a
+
+COCOAPODS: 0.36.4

@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DF35EBAC5ECC56F5A326653 /* libPods-Cole Dunsby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E4ADC1092E84C5A74F54C7 /* libPods-Cole Dunsby.a */; };
+		ED6D7E901AE7581200011301 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E731AE7581200011301 /* AboutViewController.swift */; };
+		ED6D7E911AE7581200011301 /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E741AE7581200011301 /* AwardsViewController.swift */; };
+		ED6D7E921AE7581200011301 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E751AE7581200011301 /* EducationViewController.swift */; };
+		ED6D7E931AE7581200011301 /* MapPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E761AE7581200011301 /* MapPopupViewController.swift */; };
+		ED6D7E941AE7581200011301 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E771AE7581200011301 /* ProjectsViewController.swift */; };
+		ED6D7E951AE7581200011301 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E781AE7581200011301 /* SkillsViewController.swift */; };
+		ED6D7E961AE7581200011301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E791AE7581200011301 /* ViewController.swift */; };
+		ED6D7E971AE7581200011301 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E7A1AE7581200011301 /* WorkViewController.swift */; };
+		ED6D7E981AE7581200011301 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E7C1AE7581200011301 /* CustomSegue.swift */; };
+		ED6D7E991AE7581200011301 /* CustomUnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E7D1AE7581200011301 /* CustomUnwindSegue.swift */; };
+		ED6D7E9A1AE7581200011301 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E7F1AE7581200011301 /* apps.plist */; };
+		ED6D7E9B1AE7581200011301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E801AE7581200011301 /* Images.xcassets */; };
+		ED6D7E9C1AE7581200011301 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E811AE7581200011301 /* MyParticle.sks */; };
+		ED6D7E9D1AE7581200011301 /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E821AE7581200011301 /* photos.plist */; };
+		ED6D7E9E1AE7581200011301 /* work.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E831AE7581200011301 /* work.plist */; };
+		ED6D7EA01AE7581200011301 /* BackgroundScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E881AE7581200011301 /* BackgroundScene.swift */; };
+		ED6D7EA11AE7581200011301 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E891AE7581200011301 /* CustomCollectionViewCell.swift */; };
+		ED6D7EA21AE7581200011301 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E8A1AE7581200011301 /* LaunchScreen.xib */; };
+		ED6D7EA31AE7581200011301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E8B1AE7581200011301 /* Main.storyboard */; };
+		ED6D7EA41AE7581200011301 /* MapPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7E8C1AE7581200011301 /* MapPopupViewController.xib */; };
+		ED6D7EA51AE7581200011301 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */; };
+		ED6D7EA61AE7581200011301 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8E1AE7581200011301 /* RatingView.swift */; };
+		ED6D7EA71AE7581200011301 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */; };
+		ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E38191AE59F0A000B6EED /* Crashlytics.framework */; };
+		ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E381A1AE59F0A000B6EED /* Fabric.framework */; };
+		EDE5FDF61ADF1E13004A97E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14E4ADC1092E84C5A74F54C7 /* libPods-Cole Dunsby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		985E3A41672A790F52370B57 /* Pods-Cole Dunsby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cole Dunsby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cole Dunsby/Pods-Cole Dunsby.debug.xcconfig"; sourceTree = "<group>"; };
+		DEB2E81E37548948FF03B93D /* Pods-Cole Dunsby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cole Dunsby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cole Dunsby/Pods-Cole Dunsby.release.xcconfig"; sourceTree = "<group>"; };
+		ED6D7E731AE7581200011301 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ED6D7E741AE7581200011301 /* AwardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
+		ED6D7E751AE7581200011301 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		ED6D7E761AE7581200011301 /* MapPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPopupViewController.swift; sourceTree = "<group>"; };
+		ED6D7E771AE7581200011301 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		ED6D7E781AE7581200011301 /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		ED6D7E791AE7581200011301 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED6D7E7A1AE7581200011301 /* WorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		ED6D7E7C1AE7581200011301 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		ED6D7E7D1AE7581200011301 /* CustomUnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUnwindSegue.swift; sourceTree = "<group>"; };
+		ED6D7E7F1AE7581200011301 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		ED6D7E801AE7581200011301 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ED6D7E811AE7581200011301 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		ED6D7E821AE7581200011301 /* photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
+		ED6D7E831AE7581200011301 /* work.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = work.plist; sourceTree = "<group>"; };
+		ED6D7E851AE7581200011301 /* Cole Dunsby-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cole Dunsby-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED6D7E861AE7581200011301 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6D7E881AE7581200011301 /* BackgroundScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundScene.swift; sourceTree = "<group>"; };
+		ED6D7E891AE7581200011301 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED6D7E8A1AE7581200011301 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		ED6D7E8B1AE7581200011301 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ED6D7E8C1AE7581200011301 /* MapPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapPopupViewController.xib; sourceTree = "<group>"; };
+		ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		ED6D7E8E1AE7581200011301 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		ED6E38191AE59F0A000B6EED /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		ED6E381A1AE59F0A000B6EED /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		EDE5FDF01ADF1E13004A97E7 /* Cole Dunsby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cole Dunsby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDE5FDED1ADF1E13004A97E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */,
+				ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */,
+				8DF35EBAC5ECC56F5A326653 /* libPods-Cole Dunsby.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9D7B1018CA6FCA3F94388C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985E3A41672A790F52370B57 /* Pods-Cole Dunsby.debug.xcconfig */,
+				DEB2E81E37548948FF03B93D /* Pods-Cole Dunsby.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA66C1A52ECD4B451F7D618D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E4ADC1092E84C5A74F54C7 /* libPods-Cole Dunsby.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED6D7E721AE7581200011301 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7E791AE7581200011301 /* ViewController.swift */,
+				ED6D7E731AE7581200011301 /* AboutViewController.swift */,
+				ED6D7E741AE7581200011301 /* AwardsViewController.swift */,
+				ED6D7E751AE7581200011301 /* EducationViewController.swift */,
+				ED6D7E771AE7581200011301 /* ProjectsViewController.swift */,
+				ED6D7E781AE7581200011301 /* SkillsViewController.swift */,
+				ED6D7E7A1AE7581200011301 /* WorkViewController.swift */,
+				ED6D7E761AE7581200011301 /* MapPopupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED6D7E7B1AE7581200011301 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7E7C1AE7581200011301 /* CustomSegue.swift */,
+				ED6D7E7D1AE7581200011301 /* CustomUnwindSegue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED6D7E7E1AE7581200011301 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7E811AE7581200011301 /* MyParticle.sks */,
+				ED6D7E801AE7581200011301 /* Images.xcassets */,
+				ED6D7E7F1AE7581200011301 /* apps.plist */,
+				ED6D7E821AE7581200011301 /* photos.plist */,
+				ED6D7E831AE7581200011301 /* work.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED6D7E841AE7581200011301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7E851AE7581200011301 /* Cole Dunsby-Bridging-Header.h */,
+				ED6D7E861AE7581200011301 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED6D7E871AE7581200011301 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7E8B1AE7581200011301 /* Main.storyboard */,
+				ED6D7E8A1AE7581200011301 /* LaunchScreen.xib */,
+				ED6D7E8C1AE7581200011301 /* MapPopupViewController.xib */,
+				ED6D7E881AE7581200011301 /* BackgroundScene.swift */,
+				ED6D7E891AE7581200011301 /* CustomCollectionViewCell.swift */,
+				ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */,
+				ED6D7E8E1AE7581200011301 /* RatingView.swift */,
+				ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDE5FDE71ADF1E13004A97E7 = {
+			isa = PBXGroup;
+			children = (
+				EDE5FDF21ADF1E13004A97E7 /* Cole Dunsby */,
+				EDE5FDF11ADF1E13004A97E7 /* Products */,
+				3B9D7B1018CA6FCA3F94388C /* Pods */,
+				DA66C1A52ECD4B451F7D618D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDE5FDF11ADF1E13004A97E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5FDF01ADF1E13004A97E7 /* Cole Dunsby.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDE5FDF21ADF1E13004A97E7 /* Cole Dunsby */ = {
+			isa = PBXGroup;
+			children = (
+				ED6E38191AE59F0A000B6EED /* Crashlytics.framework */,
+				ED6E381A1AE59F0A000B6EED /* Fabric.framework */,
+				EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */,
+				ED6D7E7B1AE7581200011301 /* Models */,
+				ED6D7E871AE7581200011301 /* Views */,
+				ED6D7E721AE7581200011301 /* Controllers */,
+				ED6D7E7E1AE7581200011301 /* Resources */,
+				ED6D7E841AE7581200011301 /* Supporting Files */,
+			);
+			path = "Cole Dunsby";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDE5FDEF1ADF1E13004A97E7 /* Cole Dunsby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE5FE0F1ADF1E13004A97E7 /* Build configuration list for PBXNativeTarget "Cole Dunsby" */;
+			buildPhases = (
+				18DA42D0C254D733FD34E9F8 /* Check Pods Manifest.lock */,
+				EDE5FDEC1ADF1E13004A97E7 /* Sources */,
+				EDE5FDED1ADF1E13004A97E7 /* Frameworks */,
+				EDE5FDEE1ADF1E13004A97E7 /* Resources */,
+				39D18DE1EF12C3E4AE5794CD /* Copy Pods Resources */,
+				ED6E38181AE59EDA000B6EED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cole Dunsby";
+			productName = "Cole Dunsby";
+			productReference = EDE5FDF01ADF1E13004A97E7 /* Cole Dunsby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDE5FDE81ADF1E13004A97E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cole Dunsby";
+				TargetAttributes = {
+					EDE5FDEF1ADF1E13004A97E7 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = W8W9HUZP5Z;
+					};
+				};
+			};
+			buildConfigurationList = EDE5FDEB1ADF1E13004A97E7 /* Build configuration list for PBXProject "Cole Dunsby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDE5FDE71ADF1E13004A97E7;
+			productRefGroup = EDE5FDF11ADF1E13004A97E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDE5FDEF1ADF1E13004A97E7 /* Cole Dunsby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDE5FDEE1ADF1E13004A97E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D7E9A1AE7581200011301 /* apps.plist in Resources */,
+				ED6D7E9C1AE7581200011301 /* MyParticle.sks in Resources */,
+				ED6D7EA31AE7581200011301 /* Main.storyboard in Resources */,
+				ED6D7EA21AE7581200011301 /* LaunchScreen.xib in Resources */,
+				ED6D7E9B1AE7581200011301 /* Images.xcassets in Resources */,
+				ED6D7E9D1AE7581200011301 /* photos.plist in Resources */,
+				ED6D7EA41AE7581200011301 /* MapPopupViewController.xib in Resources */,
+				ED6D7E9E1AE7581200011301 /* work.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18DA42D0C254D733FD34E9F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39D18DE1EF12C3E4AE5794CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cole Dunsby/Pods-Cole Dunsby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6E38181AE59EDA000B6EED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f09b8243ca94fd0f13ad0c2ca1c220ab63d968ea 7f0bfb2a45882911486032575e38650322c285ade7d7c5f793c9e0b2b51dc2a3";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDE5FDEC1ADF1E13004A97E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D7E941AE7581200011301 /* ProjectsViewController.swift in Sources */,
+				ED6D7E931AE7581200011301 /* MapPopupViewController.swift in Sources */,
+				ED6D7E901AE7581200011301 /* AboutViewController.swift in Sources */,
+				ED6D7EA61AE7581200011301 /* RatingView.swift in Sources */,
+				ED6D7EA11AE7581200011301 /* CustomCollectionViewCell.swift in Sources */,
+				ED6D7E991AE7581200011301 /* CustomUnwindSegue.swift in Sources */,
+				EDE5FDF61ADF1E13004A97E7 /* AppDelegate.swift in Sources */,
+				ED6D7E951AE7581200011301 /* SkillsViewController.swift in Sources */,
+				ED6D7EA71AE7581200011301 /* WorkTableViewCell.swift in Sources */,
+				ED6D7E911AE7581200011301 /* AwardsViewController.swift in Sources */,
+				ED6D7E971AE7581200011301 /* WorkViewController.swift in Sources */,
+				ED6D7E961AE7581200011301 /* ViewController.swift in Sources */,
+				ED6D7E981AE7581200011301 /* CustomSegue.swift in Sources */,
+				ED6D7EA01AE7581200011301 /* BackgroundScene.swift in Sources */,
+				ED6D7EA51AE7581200011301 /* RatingTableViewCell.swift in Sources */,
+				ED6D7E921AE7581200011301 /* EducationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EDE5FE0D1ADF1E13004A97E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDE5FE0E1ADF1E13004A97E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDE5FE101ADF1E13004A97E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985E3A41672A790F52370B57 /* Pods-Cole Dunsby.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cole Dunsby/Supporting Files/Cole Dunsby-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EDE5FE111ADF1E13004A97E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB2E81E37548948FF03B93D /* Pods-Cole Dunsby.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cole Dunsby/Supporting Files/Cole Dunsby-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDE5FDEB1ADF1E13004A97E7 /* Build configuration list for PBXProject "Cole Dunsby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE5FE0D1ADF1E13004A97E7 /* Debug */,
+				EDE5FE0E1ADF1E13004A97E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE5FE0F1ADF1E13004A97E7 /* Build configuration list for PBXNativeTarget "Cole Dunsby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE5FE101ADF1E13004A97E7 /* Debug */,
+				EDE5FE111ADF1E13004A97E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDE5FDE81ADF1E13004A97E7 /* Project object */;
+}

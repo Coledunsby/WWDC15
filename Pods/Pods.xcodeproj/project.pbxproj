@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06BCBDA68D123E7604BBAD1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A5ACFBE92DC43D960968C /* Foundation.framework */; };
+		07688088D2AB5974813848FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EB417E798269531FBC56B4 /* CoreGraphics.framework */; };
+		1140A0D0DA1AA30ACCEC4A93 /* Pods-Cole Dunsby-TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2555F128668A30E62F24C29F /* Pods-Cole Dunsby-TTTAttributedLabel-dummy.m */; };
+		1C8893D741CAC9B975BB3B03 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDFA316BCEFCA6C7B4E663 /* UIColor+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		223F9AF38B367CE44C666DD1 /* Pods-Cole Dunsby-CWPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 926D3393A946A056ADCE3CF5 /* Pods-Cole Dunsby-CWPopup-dummy.m */; };
+		2BB0A7AA9CD4C4E9F1A6A257 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0945A70FCDB2BC14D7088 /* UIViewController+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2CB268C88DC345C0DD6FA9BA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F631BA0441C941BAA53793B /* CoreText.framework */; };
+		42140E729D58B311034CD695 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 711AC106E11EE4AA1DC81823 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		43603FC3D2D2B08049D67426 /* Pods-Cole Dunsby-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A53435215F09B8FA9778833A /* Pods-Cole Dunsby-dummy.m */; };
+		5061DCCA9696AFA133867948 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D899C04DEB14F34CB46E /* UIColor+CIELAB.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5188A0784086992A724E2EE4 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 393D7D30C4EACF4A5A1F29E6 /* ChameleonMacros.h */; };
+		56F0165C46CF68A61FDAA483 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = BB689C5BD4E910291B9597E5 /* MBProgressHUD.h */; };
+		60476D55BE3DE25835CDFB9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EDBA7B8B6DEA4542AB0FAB /* QuartzCore.framework */; };
+		7232ADE4AB801E7C2F5DCD0D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F3AC98D80D60311BCCFE66 /* Chameleon.h */; };
+		7803ADA82DB180AF734629E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A5ACFBE92DC43D960968C /* Foundation.framework */; };
+		78ADD2B9CB091EDE3F2CAEF4 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF3B945B2D863491931C41 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		78C79C9FF8ED0ECF7ED4ADB2 /* UIColor+CIELAB.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DC927A1CB0D8ED12E75A4D /* UIColor+CIELAB.h */; };
+		7AED9F64C1A2D6A90593D8A4 /* UIViewController+CWPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8643983454905E3B92F93593 /* UIViewController+CWPopup.h */; };
+		7C037F8AD0531E9A390AD496 /* ChameleonStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 660FB017E8B7D3AB3880A6B1 /* ChameleonStatusBar.h */; };
+		7F873E7AA8E5BD51B08E7E5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EB417E798269531FBC56B4 /* CoreGraphics.framework */; };
+		93F0BB6A893F0586A7950C37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EDBA7B8B6DEA4542AB0FAB /* QuartzCore.framework */; };
+		957A444C417AE402062EF967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A5ACFBE92DC43D960968C /* Foundation.framework */; };
+		961698B8FBE403F63B4C9207 /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F642DD9DDB2586B82CCB0381 /* TTTAttributedLabel.h */; };
+		9B68A502B2B47BE6FFBFC104 /* Pods-Cole Dunsby-ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 209C6CC5AC22DCF1EDFE3546 /* Pods-Cole Dunsby-ChameleonFramework-dummy.m */; };
+		9BEA3543D3674DB0B9936B83 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B2444502EBFB4B3F1B7C03E3 /* UIViewController+Chameleon.h */; };
+		A19978B643CCED1FBE6FEB66 /* Pods-Cole Dunsby-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38B3989B2D400F9ED62DB0 /* Pods-Cole Dunsby-MBProgressHUD-dummy.m */; };
+		A1DF3B69C840A7EAE2105519 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2578147EBC50884EE76197 /* NSArray+Chameleon.h */; };
+		A2C6214F4B2EF713CE52132D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EB417E798269531FBC56B4 /* CoreGraphics.framework */; };
+		A80CE0A8F4A9C7F091B77623 /* UIViewController+CWPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B0828C135B1B24EF3EAA19 /* UIViewController+CWPopup.m */; settings = {COMPILER_FLAGS = "-fmodules -DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BBDBD80B6A6146FA9BF57EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A5ACFBE92DC43D960968C /* Foundation.framework */; };
+		C30C5AC7515486653BBE07B7 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A4633AB84AF8316CAC7BCF /* UIColor+Chameleon.h */; };
+		D0F9414B8F0F13E1739B59EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A5ACFBE92DC43D960968C /* Foundation.framework */; };
+		EA7050041ACAEF6CE92600A3 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD4C09ED7B22215E0662C07 /* ChameleonStatusBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FD52E5E35651976B5FBDF63E /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 69613A06D73B4A83992DBF9F /* NSArray+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71AD27A10996265CECABB8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9BE4C7633EAF8CC3D36456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7126EBF2F3D7DBEE4B54AE50;
+			remoteInfo = "Pods-Cole Dunsby-MBProgressHUD";
+		};
+		8DE7938DDD5E83B4F030E168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9BE4C7633EAF8CC3D36456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C666A9823FD496F6E722545D;
+			remoteInfo = "Pods-Cole Dunsby-ChameleonFramework";
+		};
+		ACCEDE2AF6905FDFC17D0CE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9BE4C7633EAF8CC3D36456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC21C82C302A07CA6698A7B7;
+			remoteInfo = "Pods-Cole Dunsby-TTTAttributedLabel";
+		};
+		FDE705655F3850D35F7F2FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9BE4C7633EAF8CC3D36456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12792F1169B295DFF336A65C;
+			remoteInfo = "Pods-Cole Dunsby-CWPopup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B9A1C990F912714AC82F04 /* Pods-Cole Dunsby-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cole Dunsby-environment.h"; sourceTree = "<group>"; };
+		0F631BA0441C941BAA53793B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		1504BAC892B9ABD4AB1AB35C /* libPods-Cole Dunsby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECF3B945B2D863491931C41 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
+		209C6CC5AC22DCF1EDFE3546 /* Pods-Cole Dunsby-ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cole Dunsby-ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		21F3AC98D80D60311BCCFE66 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = Chameleon/Chameleon.h; sourceTree = "<group>"; };
+		2555F128668A30E62F24C29F /* Pods-Cole Dunsby-TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cole Dunsby-TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		2F5A5ACFBE92DC43D960968C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33DC927A1CB0D8ED12E75A4D /* UIColor+CIELAB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "Chameleon/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		393D7D30C4EACF4A5A1F29E6 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = Chameleon/ChameleonMacros.h; sourceTree = "<group>"; };
+		39A094E08F21CA06FDC24D3C /* libPods-Cole Dunsby-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB520D941C6D80138657BE1 /* Pods-Cole Dunsby-CWPopup-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-CWPopup-Private.xcconfig"; sourceTree = "<group>"; };
+		42E84BB6AFD6AF134BA75AEB /* libPods-Cole Dunsby-TTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby-TTTAttributedLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		546449354E230C4288C82499 /* Pods-Cole Dunsby-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cole Dunsby-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54EC7A2CD94306A5079AF6F8 /* Pods-Cole Dunsby-CWPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cole Dunsby-CWPopup-prefix.pch"; sourceTree = "<group>"; };
+		660FB017E8B7D3AB3880A6B1 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = Chameleon/ChameleonStatusBar.h; sourceTree = "<group>"; };
+		69613A06D73B4A83992DBF9F /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Chameleon/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		6D7E43DF0BEF1F9A7A1DC09F /* Pods-Cole Dunsby-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cole Dunsby-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		711AC106E11EE4AA1DC81823 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7B2578147EBC50884EE76197 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Chameleon/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		8643983454905E3B92F93593 /* UIViewController+CWPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CWPopup.h"; path = "CWPopup/UIViewController+CWPopup.h"; sourceTree = "<group>"; };
+		87A4633AB84AF8316CAC7BCF /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Chameleon/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		8CCD84B93A8553315563B204 /* Pods-Cole Dunsby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby.debug.xcconfig"; sourceTree = "<group>"; };
+		926D3393A946A056ADCE3CF5 /* Pods-Cole Dunsby-CWPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cole Dunsby-CWPopup-dummy.m"; sourceTree = "<group>"; };
+		92B2C337AC9BEE3169FF0546 /* Pods-Cole Dunsby-CWPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-CWPopup.xcconfig"; sourceTree = "<group>"; };
+		94EB417E798269531FBC56B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		99E45F3CC85CE69C1FF0C45C /* Pods-Cole Dunsby-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cole Dunsby-resources.sh"; sourceTree = "<group>"; };
+		A53435215F09B8FA9778833A /* Pods-Cole Dunsby-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cole Dunsby-dummy.m"; sourceTree = "<group>"; };
+		AAF8A2479D8E261C78306660 /* Pods-Cole Dunsby-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		AB38B3989B2D400F9ED62DB0 /* Pods-Cole Dunsby-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cole Dunsby-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		B2444502EBFB4B3F1B7C03E3 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Chameleon/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		B470D899C04DEB14F34CB46E /* UIColor+CIELAB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "Chameleon/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		BB689C5BD4E910291B9597E5 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BCD0143FA6DCBA8B31EBD199 /* Pods-Cole Dunsby-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		BDA9E887A0B45E4CA3130DA8 /* libPods-Cole Dunsby-CWPopup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby-CWPopup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA7D4F051620384BDD88C77 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1EDBA7B8B6DEA4542AB0FAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C6CAB962C5604493B4BACD93 /* Pods-Cole Dunsby-TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-TTTAttributedLabel.xcconfig"; sourceTree = "<group>"; };
+		CCD4C09ED7B22215E0662C07 /* ChameleonStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = Chameleon/ChameleonStatusBar.m; sourceTree = "<group>"; };
+		D01C10F18E330FEC5B01AB1B /* Pods-Cole Dunsby-TTTAttributedLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-TTTAttributedLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		D3EDFA316BCEFCA6C7B4E663 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Chameleon/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		DE5B4038B8D47173299F4450 /* Pods-Cole Dunsby-ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-ChameleonFramework.xcconfig"; sourceTree = "<group>"; };
+		E9B0828C135B1B24EF3EAA19 /* UIViewController+CWPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CWPopup.m"; path = "CWPopup/UIViewController+CWPopup.m"; sourceTree = "<group>"; };
+		EF653ECAE927D8053E5288AD /* Pods-Cole Dunsby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby.release.xcconfig"; sourceTree = "<group>"; };
+		F1A19B208A788EAE6FBB742F /* Pods-Cole Dunsby-TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cole Dunsby-TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		F5C385000F402A1B3CC16244 /* Pods-Cole Dunsby-ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cole Dunsby-ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		F603818C5E77112D0156C752 /* Pods-Cole Dunsby-ChameleonFramework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cole Dunsby-ChameleonFramework-Private.xcconfig"; sourceTree = "<group>"; };
+		F642DD9DDB2586B82CCB0381 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		FBA0945A70FCDB2BC14D7088 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Chameleon/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		FC1F7E705FB38440D586358F /* libPods-Cole Dunsby-ChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby-ChameleonFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE430C25FBB6562E5844E096 /* Pods-Cole Dunsby-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cole Dunsby-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F5CDB07D3EC87528E3E7AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C6214F4B2EF713CE52132D /* CoreGraphics.framework in Frameworks */,
+				2CB268C88DC345C0DD6FA9BA /* CoreText.framework in Frameworks */,
+				7803ADA82DB180AF734629E7 /* Foundation.framework in Frameworks */,
+				60476D55BE3DE25835CDFB9D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6D7411834071C8C815C189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F873E7AA8E5BD51B08E7E5D /* CoreGraphics.framework in Frameworks */,
+				957A444C417AE402062EF967 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9234BFA3B45E064B9126A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07688088D2AB5974813848FF /* CoreGraphics.framework in Frameworks */,
+				D0F9414B8F0F13E1739B59EF /* Foundation.framework in Frameworks */,
+				93F0BB6A893F0586A7950C37 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2BEE5165C53714EE88FBA94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BCBDA68D123E7604BBAD1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B4C2F07DB094B30CCA60CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDBD80B6A6146FA9BF57EFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B27EF8311DCCFBD8DDB4248 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B624974BD78C31ADE0BFB905 /* CWPopup */,
+				6D57D7DF7152ADECCC0ACF0F /* ChameleonFramework */,
+				7195B7176DEEED9630128A94 /* MBProgressHUD */,
+				6BC4DA02FF0889CC701C3249 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3997B56844C6194669FA1F41 /* Pods-Cole Dunsby */ = {
+			isa = PBXGroup;
+			children = (
+				546449354E230C4288C82499 /* Pods-Cole Dunsby-acknowledgements.markdown */,
+				FE430C25FBB6562E5844E096 /* Pods-Cole Dunsby-acknowledgements.plist */,
+				A53435215F09B8FA9778833A /* Pods-Cole Dunsby-dummy.m */,
+				06B9A1C990F912714AC82F04 /* Pods-Cole Dunsby-environment.h */,
+				99E45F3CC85CE69C1FF0C45C /* Pods-Cole Dunsby-resources.sh */,
+				8CCD84B93A8553315563B204 /* Pods-Cole Dunsby.debug.xcconfig */,
+				EF653ECAE927D8053E5288AD /* Pods-Cole Dunsby.release.xcconfig */,
+			);
+			name = "Pods-Cole Dunsby";
+			path = "Target Support Files/Pods-Cole Dunsby";
+			sourceTree = "<group>";
+		};
+		6BC4DA02FF0889CC701C3249 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F642DD9DDB2586B82CCB0381 /* TTTAttributedLabel.h */,
+				1ECF3B945B2D863491931C41 /* TTTAttributedLabel.m */,
+				80324460A99748222C8641DF /* Support Files */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		6D57D7DF7152ADECCC0ACF0F /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				21F3AC98D80D60311BCCFE66 /* Chameleon.h */,
+				393D7D30C4EACF4A5A1F29E6 /* ChameleonMacros.h */,
+				660FB017E8B7D3AB3880A6B1 /* ChameleonStatusBar.h */,
+				CCD4C09ED7B22215E0662C07 /* ChameleonStatusBar.m */,
+				7B2578147EBC50884EE76197 /* NSArray+Chameleon.h */,
+				69613A06D73B4A83992DBF9F /* NSArray+Chameleon.m */,
+				33DC927A1CB0D8ED12E75A4D /* UIColor+CIELAB.h */,
+				B470D899C04DEB14F34CB46E /* UIColor+CIELAB.m */,
+				87A4633AB84AF8316CAC7BCF /* UIColor+Chameleon.h */,
+				D3EDFA316BCEFCA6C7B4E663 /* UIColor+Chameleon.m */,
+				B2444502EBFB4B3F1B7C03E3 /* UIViewController+Chameleon.h */,
+				FBA0945A70FCDB2BC14D7088 /* UIViewController+Chameleon.m */,
+				ADBC4F4487DDD5BA13B33D16 /* Support Files */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		7195B7176DEEED9630128A94 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BB689C5BD4E910291B9597E5 /* MBProgressHUD.h */,
+				711AC106E11EE4AA1DC81823 /* MBProgressHUD.m */,
+				784BF17959A6611F1C3772E0 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		742FA4801126097B01891B0C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92B2C337AC9BEE3169FF0546 /* Pods-Cole Dunsby-CWPopup.xcconfig */,
+				3CB520D941C6D80138657BE1 /* Pods-Cole Dunsby-CWPopup-Private.xcconfig */,
+				926D3393A946A056ADCE3CF5 /* Pods-Cole Dunsby-CWPopup-dummy.m */,
+				54EC7A2CD94306A5079AF6F8 /* Pods-Cole Dunsby-CWPopup-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Cole Dunsby-CWPopup";
+			sourceTree = "<group>";
+		};
+		76A41A81EC2C67CE5CCEA6B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1504BAC892B9ABD4AB1AB35C /* libPods-Cole Dunsby.a */,
+				BDA9E887A0B45E4CA3130DA8 /* libPods-Cole Dunsby-CWPopup.a */,
+				FC1F7E705FB38440D586358F /* libPods-Cole Dunsby-ChameleonFramework.a */,
+				39A094E08F21CA06FDC24D3C /* libPods-Cole Dunsby-MBProgressHUD.a */,
+				42E84BB6AFD6AF134BA75AEB /* libPods-Cole Dunsby-TTTAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		784BF17959A6611F1C3772E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8A2479D8E261C78306660 /* Pods-Cole Dunsby-MBProgressHUD.xcconfig */,
+				BCD0143FA6DCBA8B31EBD199 /* Pods-Cole Dunsby-MBProgressHUD-Private.xcconfig */,
+				AB38B3989B2D400F9ED62DB0 /* Pods-Cole Dunsby-MBProgressHUD-dummy.m */,
+				6D7E43DF0BEF1F9A7A1DC09F /* Pods-Cole Dunsby-MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Cole Dunsby-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		80324460A99748222C8641DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6CAB962C5604493B4BACD93 /* Pods-Cole Dunsby-TTTAttributedLabel.xcconfig */,
+				D01C10F18E330FEC5B01AB1B /* Pods-Cole Dunsby-TTTAttributedLabel-Private.xcconfig */,
+				2555F128668A30E62F24C29F /* Pods-Cole Dunsby-TTTAttributedLabel-dummy.m */,
+				F1A19B208A788EAE6FBB742F /* Pods-Cole Dunsby-TTTAttributedLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Cole Dunsby-TTTAttributedLabel";
+			sourceTree = "<group>";
+		};
+		ADBC4F4487DDD5BA13B33D16 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B4038B8D47173299F4450 /* Pods-Cole Dunsby-ChameleonFramework.xcconfig */,
+				F603818C5E77112D0156C752 /* Pods-Cole Dunsby-ChameleonFramework-Private.xcconfig */,
+				209C6CC5AC22DCF1EDFE3546 /* Pods-Cole Dunsby-ChameleonFramework-dummy.m */,
+				F5C385000F402A1B3CC16244 /* Pods-Cole Dunsby-ChameleonFramework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Cole Dunsby-ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		B624974BD78C31ADE0BFB905 /* CWPopup */ = {
+			isa = PBXGroup;
+			children = (
+				8643983454905E3B92F93593 /* UIViewController+CWPopup.h */,
+				E9B0828C135B1B24EF3EAA19 /* UIViewController+CWPopup.m */,
+				742FA4801126097B01891B0C /* Support Files */,
+			);
+			path = CWPopup;
+			sourceTree = "<group>";
+		};
+		B7050E46CD1D32D2672A0F55 = {
+			isa = PBXGroup;
+			children = (
+				BEA7D4F051620384BDD88C77 /* Podfile */,
+				F2448F515E0567A88235361E /* Frameworks */,
+				2B27EF8311DCCFBD8DDB4248 /* Pods */,
+				76A41A81EC2C67CE5CCEA6B0 /* Products */,
+				CD6691AA91A3CD2257A4B118 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CD6691AA91A3CD2257A4B118 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3997B56844C6194669FA1F41 /* Pods-Cole Dunsby */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D604ED0246B65A3E9F7A4737 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				94EB417E798269531FBC56B4 /* CoreGraphics.framework */,
+				0F631BA0441C941BAA53793B /* CoreText.framework */,
+				2F5A5ACFBE92DC43D960968C /* Foundation.framework */,
+				C1EDBA7B8B6DEA4542AB0FAB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2448F515E0567A88235361E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D604ED0246B65A3E9F7A4737 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2197B7DB25FA73A92D493466 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7232ADE4AB801E7C2F5DCD0D /* Chameleon.h in Headers */,
+				5188A0784086992A724E2EE4 /* ChameleonMacros.h in Headers */,
+				7C037F8AD0531E9A390AD496 /* ChameleonStatusBar.h in Headers */,
+				A1DF3B69C840A7EAE2105519 /* NSArray+Chameleon.h in Headers */,
+				78C79C9FF8ED0ECF7ED4ADB2 /* UIColor+CIELAB.h in Headers */,
+				C30C5AC7515486653BBE07B7 /* UIColor+Chameleon.h in Headers */,
+				9BEA3543D3674DB0B9936B83 /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DFCEB0F4AE3818B7793965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AED9F64C1A2D6A90593D8A4 /* UIViewController+CWPopup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E0C40DBE0AA5F9951D22BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F0165C46CF68A61FDAA483 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB50D4A4DDBBF24176BABE64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961698B8FBE403F63B4C9207 /* TTTAttributedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12792F1169B295DFF336A65C /* Pods-Cole Dunsby-CWPopup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA884A1BCC8E9238843A8C7B /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-CWPopup" */;
+			buildPhases = (
+				8ED8D2D986CD620FB2197A1C /* Sources */,
+				B2BEE5165C53714EE88FBA94 /* Frameworks */,
+				75DFCEB0F4AE3818B7793965 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cole Dunsby-CWPopup";
+			productName = "Pods-Cole Dunsby-CWPopup";
+			productReference = BDA9E887A0B45E4CA3130DA8 /* libPods-Cole Dunsby-CWPopup.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C39623AAE46AF0B6792469A /* Pods-Cole Dunsby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C522711C8E23E2FD8EABEB5 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby" */;
+			buildPhases = (
+				22027F883C983162C23AA2B1 /* Sources */,
+				E1B4C2F07DB094B30CCA60CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33799E8A419FD25688DD17E5 /* PBXTargetDependency */,
+				35D68A9C2FA2B2C53C3FA77B /* PBXTargetDependency */,
+				E59B53D56BD99FDDA151F323 /* PBXTargetDependency */,
+				55F0406BDFAFA1B0F7B99F1D /* PBXTargetDependency */,
+			);
+			name = "Pods-Cole Dunsby";
+			productName = "Pods-Cole Dunsby";
+			productReference = 1504BAC892B9ABD4AB1AB35C /* libPods-Cole Dunsby.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7126EBF2F3D7DBEE4B54AE50 /* Pods-Cole Dunsby-MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8DA1ED6199BE3E3B839173 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-MBProgressHUD" */;
+			buildPhases = (
+				E369C15B65E58D0E10E449CE /* Sources */,
+				8B6D7411834071C8C815C189 /* Frameworks */,
+				86E0C40DBE0AA5F9951D22BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cole Dunsby-MBProgressHUD";
+			productName = "Pods-Cole Dunsby-MBProgressHUD";
+			productReference = 39A094E08F21CA06FDC24D3C /* libPods-Cole Dunsby-MBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C666A9823FD496F6E722545D /* Pods-Cole Dunsby-ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94C3345A27827A008DDA727 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-ChameleonFramework" */;
+			buildPhases = (
+				2DE418F7674F7F9C3CD45D23 /* Sources */,
+				A9234BFA3B45E064B9126A2C /* Frameworks */,
+				2197B7DB25FA73A92D493466 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cole Dunsby-ChameleonFramework";
+			productName = "Pods-Cole Dunsby-ChameleonFramework";
+			productReference = FC1F7E705FB38440D586358F /* libPods-Cole Dunsby-ChameleonFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DC21C82C302A07CA6698A7B7 /* Pods-Cole Dunsby-TTTAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4C09E7F86F5D7B39EA3598 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-TTTAttributedLabel" */;
+			buildPhases = (
+				389592C1127B3975CC4880B9 /* Sources */,
+				6F5CDB07D3EC87528E3E7AF9 /* Frameworks */,
+				FB50D4A4DDBBF24176BABE64 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cole Dunsby-TTTAttributedLabel";
+			productName = "Pods-Cole Dunsby-TTTAttributedLabel";
+			productReference = 42E84BB6AFD6AF134BA75AEB /* libPods-Cole Dunsby-TTTAttributedLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9BE4C7633EAF8CC3D36456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 9F64BFC968261FC55B47FE8D /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7050E46CD1D32D2672A0F55;
+			productRefGroup = 76A41A81EC2C67CE5CCEA6B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C39623AAE46AF0B6792469A /* Pods-Cole Dunsby */,
+				12792F1169B295DFF336A65C /* Pods-Cole Dunsby-CWPopup */,
+				C666A9823FD496F6E722545D /* Pods-Cole Dunsby-ChameleonFramework */,
+				7126EBF2F3D7DBEE4B54AE50 /* Pods-Cole Dunsby-MBProgressHUD */,
+				DC21C82C302A07CA6698A7B7 /* Pods-Cole Dunsby-TTTAttributedLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22027F883C983162C23AA2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43603FC3D2D2B08049D67426 /* Pods-Cole Dunsby-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE418F7674F7F9C3CD45D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7050041ACAEF6CE92600A3 /* ChameleonStatusBar.m in Sources */,
+				FD52E5E35651976B5FBDF63E /* NSArray+Chameleon.m in Sources */,
+				9B68A502B2B47BE6FFBFC104 /* Pods-Cole Dunsby-ChameleonFramework-dummy.m in Sources */,
+				5061DCCA9696AFA133867948 /* UIColor+CIELAB.m in Sources */,
+				1C8893D741CAC9B975BB3B03 /* UIColor+Chameleon.m in Sources */,
+				2BB0A7AA9CD4C4E9F1A6A257 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389592C1127B3975CC4880B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1140A0D0DA1AA30ACCEC4A93 /* Pods-Cole Dunsby-TTTAttributedLabel-dummy.m in Sources */,
+				78ADD2B9CB091EDE3F2CAEF4 /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED8D2D986CD620FB2197A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223F9AF38B367CE44C666DD1 /* Pods-Cole Dunsby-CWPopup-dummy.m in Sources */,
+				A80CE0A8F4A9C7F091B77623 /* UIViewController+CWPopup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E369C15B65E58D0E10E449CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42140E729D58B311034CD695 /* MBProgressHUD.m in Sources */,
+				A19978B643CCED1FBE6FEB66 /* Pods-Cole Dunsby-MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33799E8A419FD25688DD17E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Cole Dunsby-CWPopup";
+			target = 12792F1169B295DFF336A65C /* Pods-Cole Dunsby-CWPopup */;
+			targetProxy = FDE705655F3850D35F7F2FBE /* PBXContainerItemProxy */;
+		};
+		35D68A9C2FA2B2C53C3FA77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Cole Dunsby-ChameleonFramework";
+			target = C666A9823FD496F6E722545D /* Pods-Cole Dunsby-ChameleonFramework */;
+			targetProxy = 8DE7938DDD5E83B4F030E168 /* PBXContainerItemProxy */;
+		};
+		55F0406BDFAFA1B0F7B99F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Cole Dunsby-TTTAttributedLabel";
+			target = DC21C82C302A07CA6698A7B7 /* Pods-Cole Dunsby-TTTAttributedLabel */;
+			targetProxy = ACCEDE2AF6905FDFC17D0CE2 /* PBXContainerItemProxy */;
+		};
+		E59B53D56BD99FDDA151F323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Cole Dunsby-MBProgressHUD";
+			target = 7126EBF2F3D7DBEE4B54AE50 /* Pods-Cole Dunsby-MBProgressHUD */;
+			targetProxy = 71AD27A10996265CECABB8D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1158E17774F24271F9BF6F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB520D941C6D80138657BE1 /* Pods-Cole Dunsby-CWPopup-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-CWPopup/Pods-Cole Dunsby-CWPopup-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		135600BC887ADFD22DE4E381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD0143FA6DCBA8B31EBD199 /* Pods-Cole Dunsby-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-MBProgressHUD/Pods-Cole Dunsby-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D9D622054BCC4A6389845ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD0143FA6DCBA8B31EBD199 /* Pods-Cole Dunsby-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-MBProgressHUD/Pods-Cole Dunsby-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		687ED73BCCF55F17C060C3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF653ECAE927D8053E5288AD /* Pods-Cole Dunsby.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79FCA8D0F4DA7552ADBCE45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01C10F18E330FEC5B01AB1B /* Pods-Cole Dunsby-TTTAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-TTTAttributedLabel/Pods-Cole Dunsby-TTTAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8F95A5CEC51A77B02561DC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96DB30EAE19C9B4934978BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F603818C5E77112D0156C752 /* Pods-Cole Dunsby-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-ChameleonFramework/Pods-Cole Dunsby-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A6B7D810DC74F6296003E451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CDFCF3B51B81D5B7AA93FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB520D941C6D80138657BE1 /* Pods-Cole Dunsby-CWPopup-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-CWPopup/Pods-Cole Dunsby-CWPopup-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EA957D9E052A89FD0079E7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01C10F18E330FEC5B01AB1B /* Pods-Cole Dunsby-TTTAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-TTTAttributedLabel/Pods-Cole Dunsby-TTTAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F0FCE746E9D48E3E5BD9BD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F603818C5E77112D0156C752 /* Pods-Cole Dunsby-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cole Dunsby-ChameleonFramework/Pods-Cole Dunsby-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA50F5FC46523DB5D3E732EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCD84B93A8553315563B204 /* Pods-Cole Dunsby.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C522711C8E23E2FD8EABEB5 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA50F5FC46523DB5D3E732EA /* Debug */,
+				687ED73BCCF55F17C060C3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8DA1ED6199BE3E3B839173 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135600BC887ADFD22DE4E381 /* Debug */,
+				1D9D622054BCC4A6389845ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F64BFC968261FC55B47FE8D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B7D810DC74F6296003E451 /* Debug */,
+				8F95A5CEC51A77B02561DC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94C3345A27827A008DDA727 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DB30EAE19C9B4934978BA5 /* Debug */,
+				F0FCE746E9D48E3E5BD9BD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA884A1BCC8E9238843A8C7B /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-CWPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1158E17774F24271F9BF6F6D /* Debug */,
+				CDFCF3B51B81D5B7AA93FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4C09E7F86F5D7B39EA3598 /* Build configuration list for PBXNativeTarget "Pods-Cole Dunsby-TTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA957D9E052A89FD0079E7AD /* Debug */,
+				79FCA8D0F4DA7552ADBCE45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9BE4C7633EAF8CC3D36456 /* Project object */;
+}
