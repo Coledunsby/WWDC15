@@ -37,8 +37,6 @@ class CustomSegue: UIStoryboardSegue {
             })
             
         })
-        
-        SpeechRecognitionManager.sharedInstance.delegate = nil
     }
     
 }

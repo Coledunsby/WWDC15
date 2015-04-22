@@ -20,18 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
-        UINavigationBar.appearance().titleTextAttributes = [
-            //NSForegroundColorAttributeName: UIColor.whiteColor(),
-            NSFontAttributeName: UIFont(name: "AvenirNext-Medium", size: 18)!
-        ]
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "AvenirNext-Medium", size: 18)!]
         
-        UIBarButtonItem.appearance().setTitleTextAttributes([
-                //NSForegroundColorAttributeName: UIColor.whiteColor(),
-                NSFontAttributeName: UIFont(name: "AvenirNext-DemiBold", size: 16)!
-            ],
-            forState: .Normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "AvenirNext-DemiBold", size: 16)!], forState: .Normal)
         
         return true
+    }
+    
+    func applicationWillResignActive(application: UIApplication) {
+        NSNotificationCenter.defaultCenter().postNotificationName("applicationWillResignActive", object: nil)
     }
 
 }

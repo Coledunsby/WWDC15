@@ -10,23 +10,7 @@ import UIKit
 import MapKit
 import MessageUI
 
-extension String {
-    var length: Int {
-        get {
-            return count(self)
-        }
-    }
-    func indexOf(target: String) -> Int {
-        var range = self.rangeOfString(target)
-        if let range = range {
-            return distance(self.startIndex, range.startIndex)
-        } else {
-            return -1
-        }
-    }
-}
-
-class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, SpeechRecognitionManagerDelegate {
+class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
     
     let images = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("photos", ofType: "plist")!)!
     
@@ -54,8 +38,6 @@ class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributed
         aboutLabel?.addLinkToURL(nil, withRange: range)
         
         setupImagesScrollView()
-        
-        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -206,12 +188,4 @@ class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributed
         }
     }
     
-    // MARK: SpeechRecognitionManagerDelegate
-    
-    func speechRecognitionManager(didRecognizeSpeech category: Int) {
-        if category == 6 {
-            performSegueWithIdentifier("UnwindFromAboutVC", sender: self)
-        }
-    }
-
 }

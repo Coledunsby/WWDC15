@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AwardsViewController: UIViewController, UITableViewDataSource, SpeechRecognitionManagerDelegate {
+class AwardsViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var separatorView: UIView?
     @IBOutlet weak var tableView: UITableView!
@@ -21,8 +21,6 @@ class AwardsViewController: UIViewController, UITableViewDataSource, SpeechRecog
         view.backgroundColor = UIColor.clearColor()
         
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        
-        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,14 +53,6 @@ class AwardsViewController: UIViewController, UITableViewDataSource, SpeechRecog
         }
         
         return cell
-    }
-    
-    // MARK: SpeechRecognitionManagerDelegate
-    
-    func speechRecognitionManager(didRecognizeSpeech category: Int) {
-        if category == 6 {
-            performSegueWithIdentifier("UnwindFromAwardsVC", sender: self)
-        }
     }
 
 }

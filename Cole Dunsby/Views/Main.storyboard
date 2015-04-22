@@ -22,6 +22,19 @@
                                 <rect key="frame" x="-20" y="-20" width="640" height="640"/>
                                 <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D87-Ds-8QT">
+                                <rect key="frame" x="275" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Z57-X6-WiC"/>
+                                    <constraint firstAttribute="width" constant="50" id="qJe-Gu-atX"/>
+                                </constraints>
+                                <state key="normal" image="mic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="microphoneButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YFd-A8-Uz9"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student, Developer, Entrepreneur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="887-uq-SXr">
                                 <rect key="frame" x="162" y="119" width="277" height="25"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
@@ -112,6 +125,7 @@
                         <constraints>
                             <constraint firstItem="jsS-FG-BGB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1x3-VU-CaO"/>
                             <constraint firstItem="ghX-AB-9Yj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="AOr-u7-cbr"/>
+                            <constraint firstAttribute="centerX" secondItem="D87-Ds-8QT" secondAttribute="centerX" id="Ghw-yM-Ohy"/>
                             <constraint firstItem="8XF-Gl-51k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-36" id="Jkr-kK-vLG"/>
                             <constraint firstAttribute="centerX" secondItem="887-uq-SXr" secondAttribute="centerX" id="Jr5-Qm-hah"/>
                             <constraint firstAttribute="centerX" secondItem="ghX-AB-9Yj" secondAttribute="centerX" id="Kbw-EY-GSL"/>
@@ -120,6 +134,7 @@
                             <constraint firstItem="jsS-FG-BGB" firstAttribute="top" secondItem="887-uq-SXr" secondAttribute="bottom" constant="20" id="X4p-BF-skA"/>
                             <constraint firstItem="NsU-Td-2YQ" firstAttribute="top" secondItem="887-uq-SXr" secondAttribute="bottom" constant="20" id="ZW6-pg-Bpf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8XF-Gl-51k" secondAttribute="trailing" constant="-36" id="ZYI-eO-8Zu"/>
+                            <constraint firstItem="D87-Ds-8QT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="b9u-Uf-1je"/>
                             <constraint firstItem="jsS-FG-BGB" firstAttribute="top" secondItem="NsU-Td-2YQ" secondAttribute="bottom" id="eib-U0-cte"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jsS-FG-BGB" secondAttribute="trailing" constant="-16" id="qYW-Ak-dci"/>
                             <constraint firstItem="8XF-Gl-51k" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-20" id="uLy-uf-ZZC"/>
@@ -136,6 +151,7 @@
                     <connections>
                         <outlet property="backgroundView" destination="8XF-Gl-51k" id="Bij-vJ-lko"/>
                         <outlet property="collectionView" destination="jsS-FG-BGB" id="Hlw-bC-gYk"/>
+                        <outlet property="microphoneButton" destination="D87-Ds-8QT" id="WhK-X8-Jun"/>
                         <outlet property="separatorView" destination="NsU-Td-2YQ" id="l2Q-No-mmh"/>
                         <segue destination="9l9-Tm-fP8" kind="custom" identifier="ShowSkills" customClass="CustomSegue" customModule="Cole_Dunsby" customModuleProvider="target" id="BHp-mn-moz"/>
                         <segue destination="NXg-yC-Byg" kind="custom" identifier="ShowAboutMe" customClass="CustomSegue" customModule="Cole_Dunsby" customModuleProvider="target" id="m7t-UL-euf"/>
@@ -1274,6 +1290,7 @@ Undergraduate Coursework:
         <image name="education" width="64" height="64"/>
         <image name="github" width="80" height="20"/>
         <image name="linkedIn" width="80" height="20"/>
+        <image name="mic" width="15" height="15"/>
         <image name="nuance" width="64" height="64"/>
         <image name="previous" width="48" height="48"/>
         <image name="projects" width="64" height="64"/>

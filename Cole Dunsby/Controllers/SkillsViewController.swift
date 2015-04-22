@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SkillsViewController: UIViewController, UITableViewDataSource, SpeechRecognitionManagerDelegate {
+class SkillsViewController: UIViewController, UITableViewDataSource {
 
     let skillNames = ["Objective-C", "Swift", "Java", "C++", "PHP", "SQL", "Javascript", "Python"]
     let skillValues = [5, 3, 4, 4, 3, 5, 4, 3]
@@ -24,8 +24,6 @@ class SkillsViewController: UIViewController, UITableViewDataSource, SpeechRecog
         view.backgroundColor = UIColor.clearColor()
         
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        
-        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -46,14 +44,6 @@ class SkillsViewController: UIViewController, UITableViewDataSource, SpeechRecog
         cell.ratingView!.currentStep = skillValues[indexPath.row]
         cell.ratingView!.animate()
         return cell
-    }
-    
-    // MARK: SpeechRecognitionManagerDelegate
-    
-    func speechRecognitionManager(didRecognizeSpeech category: Int) {
-        if category == 6 {
-            performSegueWithIdentifier("UnwindFromSkillsVC", sender: self)
-        }
     }
 
 }

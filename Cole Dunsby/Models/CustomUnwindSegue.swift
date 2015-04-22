@@ -22,13 +22,15 @@ class CustomUnwindSegue: UIStoryboardSegue {
             sourceVC.dismissViewControllerAnimated(false, completion: { () -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     for view in sourceVC.view!.subviews as! [UIView] {
-                        view.alpha = 1.0
+                        if view == sourceVC.microphoneButton {
+                            view.alpha = sourceVC.isSpeaking ? 1.0 : 0.5
+                        } else {
+                            view.alpha = 1.0
+                        }
                     }
                 })
             })
         })
-        
-        SpeechRecognitionManager.sharedInstance.delegate = sourceVC
     }
     
 }

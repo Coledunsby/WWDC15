@@ -10,7 +10,7 @@
 import UIKit
 import MapKit
 
-class EducationViewController: UIViewController, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate, SpeechRecognitionManagerDelegate {
+class EducationViewController: UIViewController, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate {
 
     @IBOutlet weak var aboutLabel: TTTAttributedLabel?
     @IBOutlet weak var separatorView: UIView?
@@ -30,8 +30,6 @@ class EducationViewController: UIViewController, TTTAttributedLabelDelegate, Map
         aboutLabel?.linkAttributes = [kCTForegroundColorAttributeName: UIColor.flatYellowColor()]
         aboutLabel?.activeLinkAttributes = [kCTForegroundColorAttributeName: UIColor.flatYellowColorDark()]
         aboutLabel?.addLinkToURL(nil, withRange: range)
-        
-        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,14 +64,6 @@ class EducationViewController: UIViewController, TTTAttributedLabelDelegate, Map
             if let view = view.viewWithTag(44) {
                 view.removeFromSuperview()
             }
-        }
-    }
-    
-    // MARK: SpeechRecognitionManagerDelegate
-    
-    func speechRecognitionManager(didRecognizeSpeech category: Int) {
-        if category == 6 {
-            performSegueWithIdentifier("UnwindFromEducationVC", sender: self)
         }
     }
 
