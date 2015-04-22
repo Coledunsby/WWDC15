@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8DF35EBAC5ECC56F5A326653 /* libPods-Cole Dunsby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E4ADC1092E84C5A74F54C7 /* libPods-Cole Dunsby.a */; };
+		ED64C8311AE8506C00445773 /* earcon_cancel.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED64C82E1AE8506C00445773 /* earcon_cancel.wav */; };
+		ED64C8321AE8506C00445773 /* earcon_done_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED64C82F1AE8506C00445773 /* earcon_done_listening.wav */; };
+		ED64C8331AE8506C00445773 /* earcon_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED64C8301AE8506C00445773 /* earcon_listening.wav */; };
+		ED64C8351AE8508B00445773 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED64C8341AE8508B00445773 /* SpeechKit.framework */; };
 		ED6D7E901AE7581200011301 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E731AE7581200011301 /* AboutViewController.swift */; };
 		ED6D7E911AE7581200011301 /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E741AE7581200011301 /* AwardsViewController.swift */; };
 		ED6D7E921AE7581200011301 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E751AE7581200011301 /* EducationViewController.swift */; };
@@ -31,13 +35,9 @@
 		ED6D7EA51AE7581200011301 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */; };
 		ED6D7EA61AE7581200011301 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8E1AE7581200011301 /* RatingView.swift */; };
 		ED6D7EA71AE7581200011301 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */; };
-		ED6D7F281AE7882E00011301 /* earcon_cancel.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7F251AE7882E00011301 /* earcon_cancel.wav */; };
-		ED6D7F291AE7882E00011301 /* earcon_done_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7F261AE7882E00011301 /* earcon_done_listening.wav */; };
-		ED6D7F2A1AE7882E00011301 /* earcon_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7F271AE7882E00011301 /* earcon_listening.wav */; };
 		ED6D7F2E1AE78BEA00011301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F2D1AE78BEA00011301 /* AVFoundation.framework */; };
 		ED6D7F301AE78BF000011301 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F2F1AE78BF000011301 /* AudioToolbox.framework */; };
 		ED6D7F321AE78C0E00011301 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F311AE78C0E00011301 /* SystemConfiguration.framework */; };
-		ED6D7F341AE78C9400011301 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F331AE78C9400011301 /* SpeechKit.framework */; };
 		ED6D7F361AE78D4800011301 /* Cole Dunsby-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7F351AE78D4800011301 /* Cole Dunsby-Bridging-Header.m */; };
 		ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E38191AE59F0A000B6EED /* Crashlytics.framework */; };
 		ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E381A1AE59F0A000B6EED /* Fabric.framework */; };
@@ -48,6 +48,10 @@
 		14E4ADC1092E84C5A74F54C7 /* libPods-Cole Dunsby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cole Dunsby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		985E3A41672A790F52370B57 /* Pods-Cole Dunsby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cole Dunsby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cole Dunsby/Pods-Cole Dunsby.debug.xcconfig"; sourceTree = "<group>"; };
 		DEB2E81E37548948FF03B93D /* Pods-Cole Dunsby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cole Dunsby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cole Dunsby/Pods-Cole Dunsby.release.xcconfig"; sourceTree = "<group>"; };
+		ED64C82E1AE8506C00445773 /* earcon_cancel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_cancel.wav; sourceTree = "<group>"; };
+		ED64C82F1AE8506C00445773 /* earcon_done_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_done_listening.wav; sourceTree = "<group>"; };
+		ED64C8301AE8506C00445773 /* earcon_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_listening.wav; sourceTree = "<group>"; };
+		ED64C8341AE8508B00445773 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
 		ED6D7E731AE7581200011301 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		ED6D7E741AE7581200011301 /* AwardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
 		ED6D7E751AE7581200011301 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
@@ -73,13 +77,9 @@
 		ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
 		ED6D7E8E1AE7581200011301 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
-		ED6D7F251AE7882E00011301 /* earcon_cancel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_cancel.wav; sourceTree = "<group>"; };
-		ED6D7F261AE7882E00011301 /* earcon_done_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_done_listening.wav; sourceTree = "<group>"; };
-		ED6D7F271AE7882E00011301 /* earcon_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_listening.wav; sourceTree = "<group>"; };
 		ED6D7F2D1AE78BEA00011301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ED6D7F2F1AE78BF000011301 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ED6D7F311AE78C0E00011301 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		ED6D7F331AE78C9400011301 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
 		ED6D7F351AE78D4800011301 /* Cole Dunsby-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cole Dunsby-Bridging-Header.m"; sourceTree = "<group>"; };
 		ED6E38191AE59F0A000B6EED /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		ED6E381A1AE59F0A000B6EED /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
@@ -96,7 +96,7 @@
 				ED6D7F301AE78BF000011301 /* AudioToolbox.framework in Frameworks */,
 				ED6D7F2E1AE78BEA00011301 /* AVFoundation.framework in Frameworks */,
 				ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */,
-				ED6D7F341AE78C9400011301 /* SpeechKit.framework in Frameworks */,
+				ED64C8351AE8508B00445773 /* SpeechKit.framework in Frameworks */,
 				ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */,
 				8DF35EBAC5ECC56F5A326653 /* libPods-Cole Dunsby.a in Frameworks */,
 			);
@@ -152,6 +152,9 @@
 		ED6D7E7E1AE7581200011301 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ED64C82E1AE8506C00445773 /* earcon_cancel.wav */,
+				ED64C82F1AE8506C00445773 /* earcon_done_listening.wav */,
+				ED64C8301AE8506C00445773 /* earcon_listening.wav */,
 				ED6D7E811AE7581200011301 /* MyParticle.sks */,
 				ED6D7E801AE7581200011301 /* Images.xcassets */,
 				ED6D7E7F1AE7581200011301 /* apps.plist */,
@@ -186,17 +189,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		ED6D7F221AE7881600011301 /* DragonMobileSDK */ = {
-			isa = PBXGroup;
-			children = (
-				ED6D7F331AE78C9400011301 /* SpeechKit.framework */,
-				ED6D7F251AE7882E00011301 /* earcon_cancel.wav */,
-				ED6D7F261AE7882E00011301 /* earcon_done_listening.wav */,
-				ED6D7F271AE7882E00011301 /* earcon_listening.wav */,
-			);
-			path = DragonMobileSDK;
-			sourceTree = "<group>";
-		};
 		EDE5FDE71ADF1E13004A97E7 = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +210,7 @@
 		EDE5FDF21ADF1E13004A97E7 /* Cole Dunsby */ = {
 			isa = PBXGroup;
 			children = (
-				ED6D7F221AE7881600011301 /* DragonMobileSDK */,
+				ED64C8341AE8508B00445773 /* SpeechKit.framework */,
 				ED6E38191AE59F0A000B6EED /* Crashlytics.framework */,
 				ED6E381A1AE59F0A000B6EED /* Fabric.framework */,
 				EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */,
@@ -292,12 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED6D7F2A1AE7882E00011301 /* earcon_listening.wav in Resources */,
+				ED64C8331AE8506C00445773 /* earcon_listening.wav in Resources */,
 				ED6D7E9A1AE7581200011301 /* apps.plist in Resources */,
 				ED6D7E9C1AE7581200011301 /* MyParticle.sks in Resources */,
-				ED6D7F291AE7882E00011301 /* earcon_done_listening.wav in Resources */,
+				ED64C8321AE8506C00445773 /* earcon_done_listening.wav in Resources */,
 				ED6D7EA31AE7581200011301 /* Main.storyboard in Resources */,
-				ED6D7F281AE7882E00011301 /* earcon_cancel.wav in Resources */,
+				ED64C8311AE8506C00445773 /* earcon_cancel.wav in Resources */,
 				ED6D7EA21AE7581200011301 /* LaunchScreen.xib in Resources */,
 				ED6D7E9B1AE7581200011301 /* Images.xcassets in Resources */,
 				ED6D7E9D1AE7581200011301 /* photos.plist in Resources */,
@@ -474,7 +466,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Cole",
-					Dunsby/DragonMobileSDK,
+					Dunsby,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -497,7 +489,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Cole",
-					Dunsby/DragonMobileSDK,
+					Dunsby,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

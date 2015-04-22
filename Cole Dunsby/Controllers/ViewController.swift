@@ -83,7 +83,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
         UIAlertView(
             title: "Welcome!",
-            message: "Use touch or tap the microphone and speak to navigate the menu. \n\n Sample Phrases: \n - Tell me about yourself. \n - Show me your awards. \n - Tell me about your education. \n - What projects have you worked on? \n - What programming languages do you know? \n - Where have you worked? \n ...",
+            message: "Simply tap the icons OR tap the microphone and speak the commands to navigate the menu. \n\n Sample Phrases: \n - Tell me about yourself. \n - Show me your awards. \n - Tell me about your education. \n - What projects have you worked on? \n - What programming languages do you know? \n - Where have you worked? \n ...",
             delegate: nil,
             cancelButtonTitle: "OK").show()
         
@@ -122,7 +122,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         isSpeaking = true;
         
         vocalizer = SKVocalizer(language: "en_US", delegate: self)
-        vocalizer?.speakString("Welcome! Use touch or tap the microphone and speak to navigate the menu.")
+        vocalizer?.speakString("Welcome! Simply tap the icons or tap the microphone and speak the commands to navigate the menu.")
     }
     
     func stopRecognizer() {
