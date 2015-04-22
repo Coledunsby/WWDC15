@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate, SpeechRecognitionManagerDelegate {
 
     let buttons = ["About Me", "Awards", "Education", "Projects", "Skills", "Work"]
     
@@ -46,12 +46,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // Add both effects to your view
         backgroundView!.addMotionEffect(group)
+        
+        UIAlertView(title: "Welcome!", message: "Use voice or touch to navigate the menus.", delegate: self, cancelButtonTitle: "OK").show()
     }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         separatorView?.backgroundColor = UIColor(gradientStyle: UIGradientStyle.LeftToRight, withFrame: separatorView!.bounds, andColors: [UIColor.flatSkyBlueColorDark(), UIColor.whiteColor(), UIColor.flatSkyBlueColorDark()])
+    }
+    
+    // MARK: UIAlertViewDelegate
+    
+    func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
+        SpeechRecognitionManager.sharedInstance.startSpeechRecognition()
+        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     // MARK: UICollectionViewDataSource
@@ -93,6 +102,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return CustomUnwindSegue(identifier: identifier, source: toViewController, destination: fromViewController, performHandler: { () -> Void in
             
         })
+    }
+    
+    // MARK: SpeechRecognitionManagerDelegate
+    
+    func speechRecognitionManager(didRecognizeSpeech category: Int) {
+        if category < buttons.count {
+            collectionView(collectionView!, didSelectItemAtIndexPath: NSIndexPath(forItem: category, inSection: 0))
+        }
     }
 
 }

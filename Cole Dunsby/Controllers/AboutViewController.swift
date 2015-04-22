@@ -26,7 +26,7 @@ extension String {
     }
 }
 
-class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
+class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributedLabelDelegate, MapPopupViewControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, SpeechRecognitionManagerDelegate {
     
     let images = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("photos", ofType: "plist")!)!
     
@@ -54,6 +54,8 @@ class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributed
         aboutLabel?.addLinkToURL(nil, withRange: range)
         
         setupImagesScrollView()
+        
+        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -201,6 +203,14 @@ class AboutViewController: UIViewController, UIScrollViewDelegate, TTTAttributed
             if let view = view.viewWithTag(44) {
                 view.removeFromSuperview()
             }
+        }
+    }
+    
+    // MARK: SpeechRecognitionManagerDelegate
+    
+    func speechRecognitionManager(didRecognizeSpeech category: Int) {
+        if category == 6 {
+            performSegueWithIdentifier("UnwindFromAboutVC", sender: self)
         }
     }
 

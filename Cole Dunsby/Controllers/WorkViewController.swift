@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, SpeechRecognitionManagerDelegate {
 
     let jobs = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("work", ofType: "plist")!)!
     
@@ -23,6 +23,8 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
         view.backgroundColor = UIColor.clearColor()
         
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+        
+        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -94,6 +96,14 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
         optionMenu.addAction(cancelAction)
         
         presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    // MARK: SpeechRecognitionManagerDelegate
+    
+    func speechRecognitionManager(didRecognizeSpeech category: Int) {
+        if category == 6 {
+            performSegueWithIdentifier("UnwindFromWorkVC", sender: self)
+        }
     }
 
 }

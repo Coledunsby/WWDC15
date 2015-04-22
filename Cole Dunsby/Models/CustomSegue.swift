@@ -12,8 +12,10 @@ import SpriteKit
 class CustomSegue: UIStoryboardSegue {
    
     override func perform() {
+        let sourceVC = self.sourceViewController as! ViewController
+        
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            for view in self.sourceViewController.view!!.subviews as! [UIView] {
+            for view in sourceVC.view!.subviews as! [UIView] {
                 if view is SKView {
                     // Keep
                 } else {
@@ -26,7 +28,7 @@ class CustomSegue: UIStoryboardSegue {
                 view.alpha = 0.0
             }
             
-            self.sourceViewController.presentViewController(self.destinationViewController as! UIViewController, animated: false, completion: { () -> Void in
+            sourceVC.presentViewController(self.destinationViewController as! UIViewController, animated: false, completion: { () -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     for view in self.destinationViewController.view!!.subviews as! [UIView] {
                         view.alpha = 1.0
@@ -35,6 +37,8 @@ class CustomSegue: UIStoryboardSegue {
             })
             
         })
+        
+        SpeechRecognitionManager.sharedInstance.delegate = nil
     }
     
 }

@@ -9,7 +9,7 @@
 import UIKit
 import StoreKit
 
-class ProjectsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, SKStoreProductViewControllerDelegate {
+class ProjectsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, SKStoreProductViewControllerDelegate, SpeechRecognitionManagerDelegate {
 
     let apps = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("apps", ofType: "plist")!)!
     
@@ -22,6 +22,8 @@ class ProjectsViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.clearColor()
+        
+        SpeechRecognitionManager.sharedInstance.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -101,6 +103,14 @@ class ProjectsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func productViewControllerDidFinish(viewController: SKStoreProductViewController!) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: SpeechRecognitionManagerDelegate
+    
+    func speechRecognitionManager(didRecognizeSpeech category: Int) {
+        if category == 6 {
+            performSegueWithIdentifier("UnwindFromProjectsVC", sender: self)
+        }
     }
 
 }

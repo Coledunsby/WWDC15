@@ -31,6 +31,9 @@
 		ED6D7EA51AE7581200011301 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */; };
 		ED6D7EA61AE7581200011301 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8E1AE7581200011301 /* RatingView.swift */; };
 		ED6D7EA71AE7581200011301 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */; };
+		ED6D7F191AE7644500011301 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED6D7F171AE7644500011301 /* AcousticModelEnglish.bundle */; };
+		ED6D7F1A1AE7644500011301 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F181AE7644500011301 /* OpenEars.framework */; };
+		ED6D7F1C1AE764A600011301 /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D7F1B1AE764A600011301 /* SpeechRecognitionManager.swift */; };
 		ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E38191AE59F0A000B6EED /* Crashlytics.framework */; };
 		ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E381A1AE59F0A000B6EED /* Fabric.framework */; };
 		EDE5FDF61ADF1E13004A97E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */; };
@@ -65,6 +68,9 @@
 		ED6D7E8D1AE7581200011301 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
 		ED6D7E8E1AE7581200011301 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		ED6D7E8F1AE7581200011301 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		ED6D7F171AE7644500011301 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		ED6D7F181AE7644500011301 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		ED6D7F1B1AE764A600011301 /* SpeechRecognitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionManager.swift; sourceTree = "<group>"; };
 		ED6E38191AE59F0A000B6EED /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		ED6E381A1AE59F0A000B6EED /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		EDE5FDF01ADF1E13004A97E7 /* Cole Dunsby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cole Dunsby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,7 @@
 				ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */,
 				ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */,
 				8DF35EBAC5ECC56F5A326653 /* libPods-Cole Dunsby.a in Frameworks */,
+				ED6D7F1A1AE7644500011301 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +129,7 @@
 			children = (
 				ED6D7E7C1AE7581200011301 /* CustomSegue.swift */,
 				ED6D7E7D1AE7581200011301 /* CustomUnwindSegue.swift */,
+				ED6D7F1B1AE764A600011301 /* SpeechRecognitionManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +170,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		ED6D7F161AE7644500011301 /* OpenEars */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7F171AE7644500011301 /* AcousticModelEnglish.bundle */,
+				ED6D7F181AE7644500011301 /* OpenEars.framework */,
+			);
+			path = OpenEars;
+			sourceTree = "<group>";
+		};
 		EDE5FDE71ADF1E13004A97E7 = {
 			isa = PBXGroup;
 			children = (
@@ -186,9 +203,10 @@
 				ED6E38191AE59F0A000B6EED /* Crashlytics.framework */,
 				ED6E381A1AE59F0A000B6EED /* Fabric.framework */,
 				EDE5FDF51ADF1E13004A97E7 /* AppDelegate.swift */,
+				ED6D7F161AE7644500011301 /* OpenEars */,
+				ED6D7E721AE7581200011301 /* Controllers */,
 				ED6D7E7B1AE7581200011301 /* Models */,
 				ED6D7E871AE7581200011301 /* Views */,
-				ED6D7E721AE7581200011301 /* Controllers */,
 				ED6D7E7E1AE7581200011301 /* Resources */,
 				ED6D7E841AE7581200011301 /* Supporting Files */,
 			);
@@ -256,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6D7F191AE7644500011301 /* AcousticModelEnglish.bundle in Resources */,
 				ED6D7E9A1AE7581200011301 /* apps.plist in Resources */,
 				ED6D7E9C1AE7581200011301 /* MyParticle.sks in Resources */,
 				ED6D7EA31AE7581200011301 /* Main.storyboard in Resources */,
@@ -332,6 +351,7 @@
 				ED6D7E911AE7581200011301 /* AwardsViewController.swift in Sources */,
 				ED6D7E971AE7581200011301 /* WorkViewController.swift in Sources */,
 				ED6D7E961AE7581200011301 /* ViewController.swift in Sources */,
+				ED6D7F1C1AE764A600011301 /* SpeechRecognitionManager.swift in Sources */,
 				ED6D7E981AE7581200011301 /* CustomSegue.swift in Sources */,
 				ED6D7EA01AE7581200011301 /* BackgroundScene.swift in Sources */,
 				ED6D7EA51AE7581200011301 /* RatingTableViewCell.swift in Sources */,
@@ -433,6 +453,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Cole",
+					Dunsby/OpenEars,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -454,6 +476,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Cole",
+					Dunsby/OpenEars,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Cole Dunsby/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
