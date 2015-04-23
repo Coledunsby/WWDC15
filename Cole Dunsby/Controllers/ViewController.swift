@@ -37,6 +37,16 @@ extension String {
         return found
     }
     
+    func containsAllOf(phrases: [String]) -> Bool {
+        var foundCount = 0
+        for phrase in phrases {
+            if self.indexOf(phrase) != -1 {
+                foundCount++
+            }
+        }
+        return foundCount == phrases.count
+    }
+    
 }
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, SKRecognizerDelegate, SKVocalizerDelegate {
@@ -121,7 +131,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         isSpeaking = true;
         
-        vocalizer = SKVocalizer(language: "en_US", delegate: self)
+        vocalizer = SKVocalizer(voice: "Tom", delegate: self)
         vocalizer?.speakString("Welcome! Simply tap the icons or tap the microphone and speak the commands to navigate the menu.")
     }
     
@@ -174,33 +184,45 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let phrases = results.results as! [String]
         let phrase = phrases.first?.lowercaseString
+        var custom = false
         var index = -1
+        
+        microphoneButton?.selected = false
+        
+        stopRecognizer()
+        isSpeaking = true;
         
         if phrase != nil {
             if phrase!.containsOneOf(["award", "awards"]) {
                 index = 1
-            } else if phrase!.containsOneOf(["education", "school", "university"]) {
+            } else if phrase!.containsOneOf(["education", "school", "university", "student", "grade"]) {
                 index = 2
             } else if phrase!.containsOneOf(["project", "projects", "apps", "info"]) {
                 index = 3
-            } else if phrase!.containsOneOf(["skill", "skills", "programming", "languages"]) {
+            } else if phrase!.containsOneOf(["skill", "skills", "programming", "languages"]) || phrase!.containsAllOf(["software", "experience"]) {
                 index = 4
-            } else if phrase!.containsOneOf(["work", "job", "jobs", "employment"]) {
+            } else if phrase!.containsOneOf(["work", "job", "jobs", "employment", "cv", "resume"]) || phrase!.containsAllOf(["work", "experience"]) {
                 index = 5
-            } else if phrase!.containsOneOf(["about", "about me", "info"]) {
+            } else if phrase!.containsOneOf(["about", "about me", "info", "contact"]) {
                 index = 0
+            } else if phrase!.containsAllOf(["how", "old"]) {
+                custom = true
+                vocalizer?.speakString("I am 19 years old.")
+            } else if phrase!.containsAllOf(["where", "from"]) {
+                custom = true
+                vocalizer?.speakString("I am from Montreal, Canada.")
+            } else if phrase!.containsAllOf(["where", "live"]) {
+                custom = true
+                vocalizer?.speakString("I live in Ottawa, Canada.")
+            } else if phrase!.containsOneOf(["name"]) {
+                custom = true
+                vocalizer?.speakString("My name is Cole Dunsby.")
             }
         }
-
-        microphoneButton?.selected = false
-        
-        stopRecognizer()
-        
-        isSpeaking = true;
         
         if index >= 0 {
             collectionView(collectionView!, didSelectItemAtIndexPath: NSIndexPath(forItem: index, inSection: 0))
-        } else {
+        } else if !custom {
             if phrase == nil {
                 vocalizer?.speakString("I didn't hear you. Please try again.")
             } else {
