@@ -45,8 +45,6 @@
 		ED6D7F2E1AE78BEA00011301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F2D1AE78BEA00011301 /* AVFoundation.framework */; };
 		ED6D7F301AE78BF000011301 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F2F1AE78BF000011301 /* AudioToolbox.framework */; };
 		ED6D7F321AE78C0E00011301 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7F311AE78C0E00011301 /* SystemConfiguration.framework */; };
-		ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E38191AE59F0A000B6EED /* Crashlytics.framework */; };
-		ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E381A1AE59F0A000B6EED /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,8 +89,6 @@
 		ED6D7F2D1AE78BEA00011301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ED6D7F2F1AE78BF000011301 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ED6D7F311AE78C0E00011301 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		ED6E38191AE59F0A000B6EED /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		ED6E381A1AE59F0A000B6EED /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		EDE5FDF01ADF1E13004A97E7 /* ColeDunsby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColeDunsby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9263601FEF533B8BD2806E /* Pods-ColeDunsby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColeDunsby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColeDunsby/Pods-ColeDunsby.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,8 +107,6 @@
 				ED6D7F321AE78C0E00011301 /* SystemConfiguration.framework in Frameworks */,
 				ED6D7F301AE78BF000011301 /* AudioToolbox.framework in Frameworks */,
 				ED6D7F2E1AE78BEA00011301 /* AVFoundation.framework in Frameworks */,
-				ED6E381B1AE59F0A000B6EED /* Crashlytics.framework in Frameworks */,
-				ED6E381C1AE59F0A000B6EED /* Fabric.framework in Frameworks */,
 				EB0A781F525B0A6929D7D0DF /* libPods-ColeDunsby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				ED4D335E1AE885F600665F6E /* SpeechKit.framework */,
-				ED6E38191AE59F0A000B6EED /* Crashlytics.framework */,
-				ED6E381A1AE59F0A000B6EED /* Fabric.framework */,
 				ED4D33481AE885F600665F6E /* AppDelegate.swift */,
 				ED4D33491AE885F600665F6E /* Controllers */,
 				ED4D33521AE885F600665F6E /* Models */,
@@ -255,7 +247,6 @@
 				EDE5FDED1ADF1E13004A97E7 /* Frameworks */,
 				EDE5FDEE1ADF1E13004A97E7 /* Resources */,
 				39D18DE1EF12C3E4AE5794CD /* Copy Pods Resources */,
-				ED6E38181AE59EDA000B6EED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -350,19 +341,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColeDunsby/Pods-ColeDunsby-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		ED6E38181AE59EDA000B6EED /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run f09b8243ca94fd0f13ad0c2ca1c220ab63d968ea 7f0bfb2a45882911486032575e38650322c285ade7d7c5f793c9e0b2b51dc2a3";
 		};
 /* End PBXShellScriptBuildPhase section */
 
