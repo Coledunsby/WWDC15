@@ -210,10 +210,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 vocalizer?.speakString("I am 19 years old.")
             } else if phrase!.containsAllOf(["where", "from"]) {
                 custom = true
-                vocalizer?.speakString("I am from Montreal, Canada.")
+                vocalizer?.speakString("I am from Montreal, Quebec, Canada.")
             } else if phrase!.containsAllOf(["where", "live"]) {
                 custom = true
-                vocalizer?.speakString("I live in Ottawa, Canada.")
+                vocalizer?.speakString("I live in Ottawa, Ontario, Canada.")
+            } else if phrase!.containsAllOf(["where", "born"]) {
+                custom = true
+                vocalizer?.speakString("I was born in Frederick, Maryland, USA.")
             } else if phrase!.containsOneOf(["name"]) {
                 custom = true
                 vocalizer?.speakString("My name is Cole Dunsby.")
@@ -302,8 +305,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             vocalizer?.speakString("Here are the companies I have worked for.")
         }
         
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CustomCollectionViewCell
-        let segueIdentifier = "Show" + cell.label!.text!.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        let segueIdentifier = "Show" + buttons[indexPath.row].stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
         self.performSegueWithIdentifier(segueIdentifier, sender: self)
     }
